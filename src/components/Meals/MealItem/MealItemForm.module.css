@@ -1,21 +1,21 @@
 .form {
-    text-align: right;
-  }
-  
-  .form button {
-    font: inherit;
-    cursor: pointer;
-    background-color: #F2A379;
-    border: 1px solid #F2A379;
-    color: white;
-    padding: 0.25rem 2rem;
-    border-radius: 20px;
-    font-weight: bold;
-  }
-  
-  .form button:hover,
-  .form button:active {
-    background-color: #EFD5B7;
-    border-color: black;
-    color: black;
-  }
+  text-align: right;
+}
+
+.form button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #f2a379;
+  border: 1px solid #f2a379;
+  color: white;
+  padding: 0.25rem 2rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: #efd5b7;
+  border-color: black;
+  color: black;
+}

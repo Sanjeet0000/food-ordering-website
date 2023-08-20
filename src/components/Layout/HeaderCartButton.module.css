@@ -1,62 +1,62 @@
 .button {
-    cursor: pointer;
-    font: inherit;
-    border: none;
-    background-color: #F2A379;
-    color: white;
-    padding: 0.75rem 3rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 25px;
-    font-weight: bold;
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: #f2a379;
+  color: white;
+  padding: 0.60rem 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.button:hover,
+.button:active {
+  background-color: #efd5b7;
+  color: black;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.badge {
+  background-color: #efd5b7;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+  color: black;
+}
+
+.button:hover .badge,
+.button:active .badge {
+  background-color: #f2a379;
+  color: white;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
   }
-  
-  .button:hover,
-  .button:active {
-    background-color: #EFD5B7;
-    color: black;
+  10% {
+    transform: scale(0.9);
   }
-  
-  .icon {
-    width: 1.35rem;
-    height: 1.35rem;
-    margin-right: 0.5rem;
+  30% {
+    transform: scale(1.1);
   }
-  
-  .badge {
-    background-color: #EFD5B7;
-    padding: 0.25rem 1rem;
-    border-radius: 25px;
-    margin-left: 1rem;
-    font-weight: bold;
-    color: black;
+  50% {
+    transform: scale(1.15);
   }
-  
-  .button:hover .badge,
-  .button:active .badge {
-    background-color: #F2A379;
-    color: white;
+  100% {
+    transform: scale(1);
   }
-  
-  .bump {
-    animation: bump 300ms ease-out;
-  }
-  
-  @keyframes bump {
-    0% {
-      transform: scale(1);
-    }
-    10% {
-      transform: scale(0.9);
-    }
-    30% {
-      transform: scale(1.1);
-    }
-    50% {
-      transform: scale(1.15);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
+}

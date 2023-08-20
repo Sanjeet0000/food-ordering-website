@@ -12,23 +12,22 @@ export default function HeaderCartButton(props) {
     return curNumber + item.amount;
   }, 0);
 
-  const btnClasses = `${classes.button} ${btnHighlight ? classes.bump : ''}`;
+  const btnClasses = `${classes.button} ${btnHighlight ? classes.bump : ""}`;
 
   useEffect(() => {
-    if (items.length === 0){
+    if (items.length === 0) {
       return;
     }
     setBtnHighlight(true);
 
-   const timer = setTimeout(()=> {
+    const timer = setTimeout(() => {
       setBtnHighlight(false);
     }, 300);
 
     return () => {
       clearTimeout(timer);
-    }
-
-  }, [items] );
+    };
+  }, [items]);
   return (
     <button className={btnClasses} onClick={props.onClick}>
       <span className={classes.icon}>
